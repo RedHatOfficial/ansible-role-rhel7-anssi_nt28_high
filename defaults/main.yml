@@ -65,6 +65,7 @@ var_postfix_inet_interfaces: loopback-only
 var_multiple_time_servers: 0.pool.ntp.org,1.pool.ntp.org,2.pool.ntp.org,3.pool.ntp.org
 var_sshd_set_keepalive: '0'
 sshd_idle_timeout_value: '600'
+DISA_STIG_RHEL_07_010019: true
 DISA_STIG_RHEL_07_010120: true
 DISA_STIG_RHEL_07_010130: true
 DISA_STIG_RHEL_07_010140: true
@@ -90,6 +91,8 @@ DISA_STIG_RHEL_07_020220: true
 DISA_STIG_RHEL_07_020240: true
 DISA_STIG_RHEL_07_020260: true
 DISA_STIG_RHEL_07_021000: true
+DISA_STIG_RHEL_07_021600: true
+DISA_STIG_RHEL_07_021610: true
 DISA_STIG_RHEL_07_021710: true
 DISA_STIG_RHEL_07_030370: true
 DISA_STIG_RHEL_07_030410: true
@@ -149,6 +152,8 @@ accounts_umask_etc_profile: true
 aide_build_database: true
 aide_periodic_cron_checking: true
 aide_scan_notification: true
+aide_verify_acls: true
+aide_verify_ext_attributes: true
 audit_rules_dac_modification_chmod: true
 audit_rules_dac_modification_chown: true
 audit_rules_dac_modification_fchmod: true
@@ -293,6 +298,7 @@ sebool_ssh_sysadm_login: true
 security_patches_up_to_date: true
 selinux_policytype: true
 selinux_state: true
+service_chronyd_or_ntpd_enabled: true
 set_password_hashing_algorithm_systemauth: true
 skip_ansible_lint: true
 sshd_disable_root_login: true
